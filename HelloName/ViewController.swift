@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var enterTextField: UITextField!
+    @IBOutlet weak var textField: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func submitButton(_ sender: UIButton) {
+        // Get text from textfield
+        let mText = enterTextField.text
+        // Append text after previous text
+        textField.text = "Hello " + mText!
+    }
+    
 }
 
