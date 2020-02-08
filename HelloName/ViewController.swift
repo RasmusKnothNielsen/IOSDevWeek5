@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func submitButton(_ sender: UIButton) {
-        // Get text from textfield
+        // Get text from input textfield
         let mText = enterTextField.text
-        // Append text after previous text
+        // Update the textfield
         textField.text = "Hello " + mText! + "!"
     }
     
