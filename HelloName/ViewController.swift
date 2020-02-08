@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         // Get text from textfield
         let mText = enterTextField.text
         // Append text after previous text
-        textField.text = "Hello " + mText!
+        textField.text = "Hello " + mText! + "!"
     }
     
 }
